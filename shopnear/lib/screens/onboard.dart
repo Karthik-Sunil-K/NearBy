@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopnear/components/rounded_button.dart';
 
 class OnBoard extends StatelessWidget {
   @override
@@ -14,6 +15,9 @@ class OnBoard extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            SizedBox(
+              height: 400,
+            ),
             Center(
               child: Text(
                 'Welcome \n to our store',
@@ -21,9 +25,23 @@ class OnBoard extends StatelessWidget {
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
-                  fontSize: 40,
+                  fontSize: 45,
                 ),
               ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Text(
+              "Get your products in an hour",
+              style: TextStyle(color: Colors.grey[400], fontSize: 18),
+            ),
+            SizedBox(
+              height: 70,
+            ),
+            RoundedButton(
+              text: 'Get Started',
+              color: Colors.green[300],
             ),
           ],
         ),
