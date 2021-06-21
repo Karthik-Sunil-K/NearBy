@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:shopnear/screens/loading_screen.dart';
 import 'package:shopnear/screens/location.dart';
 import 'package:shopnear/screens/loginPage.dart';
@@ -14,12 +15,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: Location());
+        home: SplashScreen());
   }
 }
