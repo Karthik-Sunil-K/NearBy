@@ -3,6 +3,7 @@ import 'package:shopnear/screens/loading_screen.dart';
 import 'package:shopnear/screens/location.dart';
 import 'package:shopnear/screens/loginPage.dart';
 import 'package:shopnear/screens/onboard.dart';
+import 'package:shopnear/screens/splash_screen.dart';
 import 'package:shopnear/screens/succes.dart';
 
 void main() {
@@ -19,6 +20,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: OnBoard());
+        home: SplashScreen());
   }
 }

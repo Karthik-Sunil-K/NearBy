@@ -55,8 +55,14 @@ class OnBoard extends StatelessWidget {
                 child: FlatButton(
                   padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
                   color: Color(0xff53B175),
-                  onPressed: () {     Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => SignInPage()));},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SignInPage(),
+                      ),
+                    );
+                  },
                   child: Text(
                     'Get Started',
                     style: TextStyle(
@@ -74,5 +80,3 @@ class OnBoard extends StatelessWidget {
     );
   }
 }
-
-
