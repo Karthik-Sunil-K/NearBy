@@ -16,7 +16,11 @@ class OnBoard extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SizedBox(
-              height: 400,
+              height: 150,
+            ),
+            Image.asset(
+              'assets/icons/1.png',
+              // scale: 1.2,
             ),
             Center(
               child: Text(
@@ -41,7 +45,7 @@ class OnBoard extends StatelessWidget {
             ),
             RoundedButton(
               text: 'Get Started',
-              color: Colors.green[300],
+              color: Color(0xff53B175),
             ),
           ],
         ),

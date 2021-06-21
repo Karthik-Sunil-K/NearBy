@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shopnear/screens/loading_screen.dart';
-import 'package:shopnear/screens/onBoard.dart';
+import 'package:shopnear/screens/onboard.dart';
 
 void main() {
   runApp(MyApp());
