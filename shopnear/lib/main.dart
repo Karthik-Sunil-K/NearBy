@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shopnear/screens/loading_screen.dart';
 import 'package:shopnear/screens/location.dart';
+import 'package:shopnear/screens/loginPage.dart';
 import 'package:shopnear/screens/onboard.dart';
 import 'package:shopnear/screens/succes.dart';
 
@@ -18,6 +19,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: Location());
+        home: SignInPage());
   }
 }
