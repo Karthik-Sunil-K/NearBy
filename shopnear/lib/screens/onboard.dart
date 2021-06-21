@@ -18,10 +18,11 @@ class OnBoard extends StatelessWidget {
             SizedBox(
               height: 150,
             ),
-            Image.asset(
-              'assets/icons/1.png',
-              // width: 100,
-              // height: 100,
+            Container(
+              child: Image.asset(
+                'assets/icons/1.png',
+                fit: BoxFit.contain,
+              ),
             ),
             Center(
               child: Text(
