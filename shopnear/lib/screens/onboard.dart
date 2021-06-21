@@ -20,7 +20,8 @@ class OnBoard extends StatelessWidget {
             ),
             Image.asset(
               'assets/icons/1.png',
-              // scale: 1.2,
+              // width: 100,
+              // height: 100,
             ),
             Center(
               child: Text(
