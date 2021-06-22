@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopnear/components/rounded_button.dart';
 
 class Location extends StatefulWidget {
   const Location({Key? key}) : super(key: key);
@@ -62,16 +63,18 @@ class _LocationState extends State<Location> {
           SingleChildScrollView(
             child: Padding(
               padding:
-                  const EdgeInsets.symmetric(horizontal: 18.0, vertical: 10.0),
+                  const EdgeInsets.symmetric(horizontal: 18.0, vertical: 18.0),
               child: DropdownButton<String>(
                 hint: Text('Select District'),
+                icon: Icon(Icons.arrow_drop_down),
+                iconSize: 30,
                 value: dropdownValue,
                 elevation: 16,
                 isExpanded: true,
-                style: const TextStyle(color: Colors.deepPurple),
+                style: const TextStyle(color: Color(0xff181725), fontSize: 16),
                 underline: Container(
                   height: 1,
-                  color: Colors.deepPurpleAccent,
+                  color: Color(0xffE2E2E2),
                 ),
                 onChanged: (String? newValue) {
                   setState(() {
@@ -101,6 +104,20 @@ class _LocationState extends State<Location> {
                 }).toList(),
               ),
             ),
+          ),
+          Padding(
+            padding:
+                const EdgeInsets.symmetric(horizontal: 18.0, vertical: 18.0),
+            child: TextFormField(
+              decoration: InputDecoration(
+                border: UnderlineInputBorder(),
+                labelText: 'Enter PinCode',
+              ),
+            ),
+          ),
+          RoundedButton(
+            text: 'Submit',
+            color: Color(0xff53B175),
           ),
         ],
       ),
