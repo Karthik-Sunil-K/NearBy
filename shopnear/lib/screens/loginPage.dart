@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shopnear/components/rounded_button.dart';
+import 'package:shopnear/screens/location.dart';
 
 class SignInPage extends StatefulWidget {
   const SignInPage({Key? key}) : super(key: key);
@@ -15,15 +16,14 @@ class _SignInPageState extends State<SignInPage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-
           Container(
-            height: MediaQuery.of(context).size.height/2,
-               decoration: BoxDecoration(
-          image: DecorationImage(
-            fit: BoxFit.cover,
-            image: AssetImage('assets/images/bagSignUp.png'),
-          ),
-        ),
+            height: MediaQuery.of(context).size.height / 2,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage('assets/images/bagSignUp.png'),
+              ),
+            ),
           ),
           Center(
             child: Text(
@@ -31,7 +31,8 @@ class _SignInPageState extends State<SignInPage> {
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.black,
-                fontFamily:'Poppins',fontWeight: FontWeight.w600,
+                fontFamily: 'Poppins',
+                fontWeight: FontWeight.w600,
                 fontSize: 30,
               ),
             ),
@@ -41,11 +42,19 @@ class _SignInPageState extends State<SignInPage> {
           ),
           Text(
             "Get your products in an hour",
-            style: TextStyle(color: Colors.grey[400], fontSize: 18,fontFamily:'Poppins',fontWeight: FontWeight.w400),
+            style: TextStyle(
+                color: Colors.grey[400],
+                fontSize: 18,
+                fontFamily: 'Poppins',
+                fontWeight: FontWeight.w400),
           ),
           Text(
             "LOGIN",
-            style: TextStyle(color: Colors.grey[700], fontSize: 18,fontFamily:'Poppins',fontWeight: FontWeight.w400),
+            style: TextStyle(
+                color: Colors.grey[700],
+                fontSize: 18,
+                fontFamily: 'Poppins',
+                fontWeight: FontWeight.w400),
           ),
           SizedBox(
             height: 30,
@@ -53,10 +62,19 @@ class _SignInPageState extends State<SignInPage> {
           RoundedButton(
             text: 'Continue with Google',
             color: Color(0xff5383EC),
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Location(),
+                ),
+              );
+            },
           ),
-           RoundedButton(
+          RoundedButton(
             text: 'Continue with Google',
             color: Color(0xff5383EC),
+            press: () {},
           ),
         ],
       ),

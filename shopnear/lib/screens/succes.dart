@@ -41,11 +41,13 @@ class Succes extends StatelessWidget {
           RoundedButton(
             text: 'Track Order',
             color: Color(0xff53B175),
+            press: () {},
           ),
           RoundedButton(
             text: 'Back to home',
             color: Colors.white,
             textColor: Colors.black,
+            press: () {},
           ),
         ],
       ),
