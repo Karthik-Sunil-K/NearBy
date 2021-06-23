@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 class RoundedButton extends StatelessWidget {
   final String text;
   final Color? color, textColor;
-  final Function? buttonFunction;
+  final void Function() press;
   const RoundedButton({
     Key? key,
     required this.text,
     this.textColor = Colors.white,
     this.color,
-    this.buttonFunction
+    required this.press,
   }) : super(key: key);
 
   @override
@@ -23,7 +23,7 @@ class RoundedButton extends StatelessWidget {
         child: FlatButton(
           padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
           color: color,
-          onPressed: (){},
+          onPressed: press,
           child: Text(
             text,
             style: TextStyle(

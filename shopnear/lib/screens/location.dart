@@ -20,48 +20,48 @@ class _LocationState extends State<Location> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          SizedBox(
-            height: 25,
-          ),
-          Container(
-            child: Image.asset(
-              'assets/images/loc.PNG',
-              fit: BoxFit.contain,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(
+              height: 25,
             ),
-            width: MediaQuery.of(context).size.width,
-          ),
-          SizedBox(
-            height: 25,
-          ),
-          Text(
-            'Select your location',
-            style: TextStyle(
-              color: Color(0xff181725),
-              fontSize: 26,
-              fontFamily: 'Poppins',
-              fontWeight: FontWeight.w500,
+            Container(
+              child: Image.asset(
+                'assets/images/loc.PNG',
+                fit: BoxFit.contain,
+              ),
+              width: MediaQuery.of(context).size.width,
             ),
-          ),
-          SizedBox(
-            height: 25,
-          ),
-          Text(
-            'Swithch on your location to stay in tune with \n what’s happening in your area',
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Color(0xff7C7C7C),
-              fontSize: 16,
-              fontFamily: 'Poppins',
-              fontWeight: FontWeight.w400,
+            SizedBox(
+              height: 25,
             ),
-          ),
-          SizedBox(
-            height: 50,
-          ),
-          SingleChildScrollView(
-            child: Padding(
+            Text(
+              'Select your location',
+              style: TextStyle(
+                color: Color(0xff181725),
+                fontSize: 26,
+                fontFamily: 'Poppins',
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+            SizedBox(
+              height: 25,
+            ),
+            Text(
+              'Switch on your location to stay in tune with \n what’s happening in your area',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Color(0xff7C7C7C),
+                fontSize: 16,
+                fontFamily: 'Poppins',
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Padding(
               padding:
                   const EdgeInsets.symmetric(horizontal: 18.0, vertical: 18.0),
               child: DropdownButton<String>(
@@ -104,22 +104,27 @@ class _LocationState extends State<Location> {
                 }).toList(),
               ),
             ),
-          ),
-          Padding(
-            padding:
-                const EdgeInsets.symmetric(horizontal: 18.0, vertical: 18.0),
-            child: TextFormField(
-              decoration: InputDecoration(
-                border: UnderlineInputBorder(),
-                labelText: 'Enter PinCode',
+            Padding(
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 18.0, vertical: 18.0),
+              child: TextField(
+                decoration: InputDecoration(
+                  border: UnderlineInputBorder(),
+                  focusedBorder: InputBorder.none,
+                  hintText: 'Enter PinCode',
+                ),
               ),
             ),
-          ),
-          RoundedButton(
-            text: 'Submit',
-            color: Color(0xff53B175),
-          ),
-        ],
+            SizedBox(
+              height: 30,
+            ),
+            RoundedButton(
+              text: 'Submit',
+              color: Color(0xff53B175),
+              press: () {},
+            ),
+          ],
+        ),
       ),
     );
   }
