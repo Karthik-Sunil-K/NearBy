@@ -10,8 +10,11 @@ import 'package:shopnear/screens/loginPage.dart';
 import 'package:shopnear/screens/onboard.dart';
 import 'package:shopnear/screens/splash_screen.dart';
 import 'package:shopnear/screens/succes.dart';
+import 'package:shopnear/bottom_bar.dart';
 
-void main() async{
+import 'screens/splash_screen.dart';
+
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(MyApp());
@@ -22,14 +25,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (context)=> GoogleSignInProvider(),
+      create: (context) => GoogleSignInProvider(),
       child: GetMaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          home: OnBoard()),
+          home: SplashScreen()),
     );
   }
 }
