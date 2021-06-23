@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:shopnear/components/rounded_button.dart';
+import 'package:shopnear/provider/google_sign.dart';
 
 class SignInPage extends StatefulWidget {
   const SignInPage({Key? key}) : super(key: key);
@@ -15,7 +17,6 @@ class _SignInPageState extends State<SignInPage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-
           Container(
             height: MediaQuery.of(context).size.height/2,
                decoration: BoxDecoration(
@@ -50,10 +51,22 @@ class _SignInPageState extends State<SignInPage> {
           SizedBox(
             height: 30,
           ),
-          RoundedButton(
-            text: 'Continue with Google',
-            color: Color(0xff5383EC),
+          FlatButton(
+          padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+          color: Colors.green,
+          onPressed: (){
+            final provider = Provider.of<GoogleSignInProvider>(context,listen: false);
+            provider.googleLogin();
+          },
+          child: Text('login g'
+            ,
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.w600,
+              fontSize: 18,
+            ),
           ),
+        ),
            RoundedButton(
             text: 'Continue with Google',
             color: Color(0xff5383EC),

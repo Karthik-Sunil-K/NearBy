@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shopnear/components/rounded_button.dart';
+import 'package:shopnear/screens/loggedIn_screen.dart';
 import 'package:shopnear/screens/loginPage.dart';
 
 class OnBoard extends StatelessWidget {
@@ -59,7 +60,7 @@ class OnBoard extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => SignInPage(),
+                        builder: (context) => LoggedInScreen(),
                       ),
                     );
                   },
