@@ -13,10 +13,10 @@ class BottomBarScreen extends StatefulWidget {
 
 class _BottomBarScreenState extends State<BottomBarScreen> {
   List _pages = [
-    Home(),
-    Explore(),
-    Cart(),
-    User(),
+    HomeScreen(),
+    ExploreScreen(),
+    CartScreen(),
+    UserScreen(),
   ];
 
   /* List<Map<String, Object>> _pages;
