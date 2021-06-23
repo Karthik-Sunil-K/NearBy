@@ -62,28 +62,23 @@ class _SignInPageState extends State<SignInPage> {
           SizedBox(
             height: 30,
           ),
-          FlatButton(
-          padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
-          color: Colors.green,
-          onPressed: (){
-            final provider = Provider.of<GoogleSignInProvider>(context,listen: false);
-            provider.googleLogin();
-          },
-          child: Text('login g'
-            ,
-            style: TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.w600,
-              fontSize: 18,
-            ),
+          RoundedButton(
+
+            text: 'Login With Mail',
+            color: Color(0xff5383EC),
+            press: () {
+              print('mail login');
+            },
           ),
-        ),
 
           RoundedButton(
 
             text: 'Continue with Google',
             color: Color(0xff5383EC),
-            press: () {},
+            press: () {
+              final provider = Provider.of<GoogleSignInProvider>(context,listen: false);
+            provider.googleLogin();
+            },
           ),
         ],
       ),
