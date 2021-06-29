@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-class UserScreen extends StatefulWidget {
-  const UserScreen({Key? key}) : super(key: key);
+class SellerCartScreen extends StatefulWidget {
+  const SellerCartScreen({Key? key}) : super(key: key);
 
   @override
-  _UserScreenState createState() => _UserScreenState();
+  _SellerCartScreenState createState() => _SellerCartScreenState();
 }
 
-class _UserScreenState extends State<UserScreen> {
+class _SellerCartScreenState extends State<SellerCartScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
         child: Text(
-          'Profile',
+          'Cart Screen',
           style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
         ),
       ),

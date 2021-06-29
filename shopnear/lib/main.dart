@@ -11,6 +11,7 @@ import 'package:shopnear/screens/onboard.dart';
 import 'package:shopnear/screens/splash_screen.dart';
 import 'package:shopnear/screens/succes.dart';
 import 'package:shopnear/bottom_bar.dart';
+import 'package:shopnear/sellerscreen/bottom_seller_screen_navigation.dart';
 
 import 'screens/splash_screen.dart';
 
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          home: BottomBarScreen()),
+          home: SellerBottomBarScreen()),
     );
   }
 }
