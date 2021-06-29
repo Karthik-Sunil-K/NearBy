@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:shopnear/components/rounded_button.dart';
 
-class Location extends StatefulWidget {
-  const Location({Key? key}) : super(key: key);
+class LocationPage extends StatefulWidget {
+  const LocationPage({Key? key}) : super(key: key);
 
   @override
-  _LocationState createState() => _LocationState();
+  _LocationPageState createState() => _LocationPageState();
 }
 
 String? dropdownValue;
@@ -16,7 +16,7 @@ List listItem = [
   "Alappuzha",
 ];
 
-class _LocationState extends State<Location> {
+class _LocationPageState extends State<LocationPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
