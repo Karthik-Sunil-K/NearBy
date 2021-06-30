@@ -107,7 +107,9 @@ class _LocationPageState extends State<LocationPage> {
             Padding(
               padding:
                   const EdgeInsets.symmetric(horizontal: 18.0, vertical: 18.0),
-              child: TextField(
+              child: TextFormField(
+                maxLength: 6,
+                keyboardType: TextInputType.number,
                 decoration: InputDecoration(
                   border: UnderlineInputBorder(),
                   focusedBorder: InputBorder.none,
