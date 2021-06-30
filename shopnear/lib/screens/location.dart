@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shopnear/components/rounded_button.dart';
+import 'package:shopnear/screens/SignInPage.dart';
 
 class LocationPage extends StatefulWidget {
   const LocationPage({Key? key}) : super(key: key);
@@ -123,7 +124,14 @@ class _LocationPageState extends State<LocationPage> {
             RoundedButton(
               text: 'Submit',
               color: Color(0xff53B175),
-              press: () {},
+              press: () {
+                 Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SignInPage(),
+                      ),
+                    );
+              },
             ),
           ],
         ),

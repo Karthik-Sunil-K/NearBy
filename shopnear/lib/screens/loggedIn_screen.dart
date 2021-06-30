@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:shopnear/screens/loginPage.dart';
+import 'package:shopnear/screens/SignInPage.dart';
 import 'package:shopnear/screens/onboard.dart';
 
 class LoggedInScreen extends StatelessWidget {

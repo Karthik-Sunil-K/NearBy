@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shopnear/components/rounded_button.dart';
 import 'package:shopnear/screens/loggedIn_screen.dart';
 import 'package:shopnear/screens/location.dart';
-import 'package:shopnear/screens/loginPage.dart';
+import 'package:shopnear/screens/SignInPage.dart';
 
 class OnBoard extends StatelessWidget {
   @override

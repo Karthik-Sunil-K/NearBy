@@ -6,7 +6,7 @@ import 'package:shopnear/provider/google_sign.dart';
 import 'package:shopnear/screens/loading_screen.dart';
 import 'package:shopnear/screens/location.dart';
 import 'package:shopnear/screens/loggedIn_screen.dart';
-import 'package:shopnear/screens/loginPage.dart';
+import 'package:shopnear/screens/SignInPage.dart';
 import 'package:shopnear/screens/onboard.dart';
 import 'package:shopnear/screens/splash_screen.dart';
 import 'package:shopnear/screens/succes.dart';
@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          home: LocationPage()),
+          home: SplashScreen()),
     );
   }
 }
