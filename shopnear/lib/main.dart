@@ -2,6 +2,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
+import 'package:shopnear/home_page/home_screen.dart';
+import 'package:shopnear/home_sections/store_section.dart';
 import 'package:shopnear/provider/google_sign.dart';
 import 'package:shopnear/screens/loading_screen.dart';
 import 'package:shopnear/screens/location.dart';
@@ -33,7 +35,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          home: SplashScreen()),
+          home: HomeScreen()),
     );
   }
 }

@@ -29,6 +29,7 @@ dependencies:
   get: ^4.1.4
   google_sign_in: ^5.0.4
   provider: ^5.0.0
+  carousel_slider: ^4.0.0
 
 dev_dependencies:
   flutter_test:

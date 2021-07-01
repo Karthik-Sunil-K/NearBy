@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:shopnear/home/cart_screen.dart';
-import 'package:shopnear/home/explore_screen.dart';
-import 'package:shopnear/home/home_screen.dart';
-import 'package:shopnear/home/user_screen.dart';
+import 'package:shopnear/home_page//cart_screen.dart';
+import 'package:shopnear/home_page/explore_screen.dart';
+import 'package:shopnear/home_page/home_screen.dart';
+import 'package:shopnear/home_page/user_screen.dart';
 
 class BottomBarScreen extends StatefulWidget {
   static const routeName = '/BottomBarScreen';
