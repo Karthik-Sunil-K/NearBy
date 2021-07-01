@@ -1,7 +1,9 @@
 import 'dart:async';
 
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:shopnear/home/home_screen.dart';
 import 'package:shopnear/screens/onboard.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -16,7 +18,20 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   void navigationPage() {
-    Get.off(() => OnBoard());
+    if(FirebaseAuth.instance.currentUser!=null){
+      Get.off(HomeScreen());
+    }
+    else{
+      Get.off(OnBoard());
+    }
+    FirebaseAuth.instance.authStateChanges().listen((User?user) {
+      if(user==null){
+        Get.off(OnBoard());
+      }
+      else{
+        Get.off(HomeScreen());
+      }
+     });
   }
 
   @override

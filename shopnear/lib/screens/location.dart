@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:shopnear/components/rounded_button.dart';
 import 'package:shopnear/screens/SignInPage.dart';
+import 'package:shopnear/screens/loggedIn_screen.dart';
 
 class LocationPage extends StatefulWidget {
   const LocationPage({Key? key}) : super(key: key);
-
   @override
   _LocationPageState createState() => _LocationPageState();
 }
@@ -18,6 +18,7 @@ List listItem = [
 ];
 
 class _LocationPageState extends State<LocationPage> {
+  final myController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -66,7 +67,7 @@ class _LocationPageState extends State<LocationPage> {
               padding:
                   const EdgeInsets.symmetric(horizontal: 18.0, vertical: 18.0),
               child: DropdownButton<String>(
-                hint: Text('Select District'),
+                hint: Text('Thiruvanthapuram'),
                 icon: Icon(Icons.arrow_drop_down),
                 iconSize: 30,
                 value: dropdownValue,
@@ -109,6 +110,7 @@ class _LocationPageState extends State<LocationPage> {
               padding:
                   const EdgeInsets.symmetric(horizontal: 18.0, vertical: 18.0),
               child: TextFormField(
+                controller: myController,
                 maxLength: 6,
                 keyboardType: TextInputType.number,
                 decoration: InputDecoration(
@@ -125,12 +127,17 @@ class _LocationPageState extends State<LocationPage> {
               text: 'Submit',
               color: Color(0xff53B175),
               press: () {
-                 Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => SignInPage(),
-                      ),
-                    );
+                if (myController.text.length == 6){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => LoggedInScreen(),
+                    ),
+                  );
+                }
+                else{
+                  print('not permit');
+                }
               },
             ),
           ],

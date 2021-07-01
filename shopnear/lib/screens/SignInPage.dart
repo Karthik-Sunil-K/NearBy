@@ -4,7 +4,6 @@ import 'package:shopnear/components/rounded_button.dart';
 import 'package:shopnear/provider/google_sign.dart';
 import 'package:shopnear/screens/location.dart';
 
-
 class SignInPage extends StatefulWidget {
   const SignInPage({Key? key}) : super(key: key);
 
@@ -63,23 +62,46 @@ class _SignInPageState extends State<SignInPage> {
             height: 30,
           ),
           RoundedButton(
-
             text: 'Login With Mail',
             color: Color(0xff5383EC),
             press: () {
               print('mail login');
             },
           ),
+          Container(
+            margin: EdgeInsets.symmetric(vertical: 10),
+            width: MediaQuery.of(context).size.width * 0.8,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(20),
+              child: FlatButton(
+                padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+                color: Colors.black,
+                onPressed: () {
+                  
+                      Provider.of<GoogleSignInProvider>(context, listen: false).googleLogin();
+                  
+                },
+                child: Text(
+                  'Continue with Google',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18,
+                  ),
+                ),
+              ),
+            ),
+          )
 
-          RoundedButton(
+          // RoundedButton(
 
-            text: 'Continue with Google',
-            color: Color(0xff5383EC),
-            press: () {
-              final provider = Provider.of<GoogleSignInProvider>(context,listen: false);
-            provider.googleLogin();
-            },
-          ),
+          //   text: 'Continue with Google',
+          //   color: Color(0xff5383EC),
+          //   press: () {
+          //     final provider = Provider.of<GoogleSignInProvider>(context,listen: false);
+          //   provider.googleLogin();
+          //   },
+          // ),
         ],
       ),
     );

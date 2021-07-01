@@ -14,6 +14,7 @@ import 'package:shopnear/screens/splash_screen.dart';
 import 'package:shopnear/screens/succes.dart';
 import 'package:shopnear/bottom_bar.dart';
 import 'package:shopnear/sellerscreen/bottom_seller_screen_navigation.dart';
+import 'package:shopnear/user_profile/profile_main.dart';
 
 import 'screens/splash_screen.dart';
 
@@ -30,12 +31,13 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => GoogleSignInProvider(),
       child: GetMaterialApp(
+        
           debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          home: HomeScreen()),
+          home: SplashScreen()),
     );
   }
 }
