@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shopnear/bottom_bar.dart';
 import 'package:shopnear/home/home_screen.dart';
+import 'package:shopnear/screens/loading_screen.dart';
 import 'package:shopnear/screens/onboard.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -44,18 +45,19 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
+      body:LoadingScreen() ,
       // backgroundColor: Colors.white,
-      body: new Center(
-        child: Container(
-          height: Get.height,
-          width: Get.width,
-          decoration: BoxDecoration(
-              image: DecorationImage(
-            image: AssetImage("assets/images/splash.png"),
-            fit: BoxFit.cover,
-          )),
-        ),
-      ),
+      // body: new Center(
+      //   child: Container(
+      //     height: Get.height,
+      //     width: Get.width,
+      //     decoration: BoxDecoration(
+      //         image: DecorationImage(
+      //       image: AssetImage("assets/images/splash.png"),
+      //       fit: BoxFit.cover,
+      //     )),
+      //   ),
+      // ),
     );
   }
 }
