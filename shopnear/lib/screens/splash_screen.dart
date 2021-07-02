@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:shopnear/bottom_bar.dart';
 import 'package:shopnear/home/home_screen.dart';
 import 'package:shopnear/screens/onboard.dart';
 
@@ -19,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   void navigationPage() {
     if(FirebaseAuth.instance.currentUser!=null){
-      Get.off(HomeScreen());
+      Get.off(BottomBarScreen());
     }
     else{
       Get.off(OnBoard());
@@ -29,7 +30,7 @@ class _SplashScreenState extends State<SplashScreen> {
         Get.off(OnBoard());
       }
       else{
-        Get.off(HomeScreen());
+        Get.off(BottomBarScreen());
       }
      });
   }
