@@ -4,7 +4,6 @@ import 'package:shopnear/components/carousel.dart';
 import 'package:shopnear/components/rounded_input_field.dart';
 import 'package:shopnear/home_page/explore_screen.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:shopnear/home_sections/store_section.dart';
 
 class HomeScreen extends StatelessWidget {
   @override

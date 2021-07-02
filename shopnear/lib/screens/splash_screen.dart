@@ -4,7 +4,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shopnear/bottom_bar.dart';
-import 'package:shopnear/home/home_screen.dart';
 import 'package:shopnear/screens/loading_screen.dart';
 import 'package:shopnear/screens/onboard.dart';
 
@@ -20,20 +19,18 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   void navigationPage() {
-    if(FirebaseAuth.instance.currentUser!=null){
+    if (FirebaseAuth.instance.currentUser != null) {
       Get.off(BottomBarScreen());
-    }
-    else{
+    } else {
       Get.off(OnBoard());
     }
-    FirebaseAuth.instance.authStateChanges().listen((User?user) {
-      if(user==null){
+    FirebaseAuth.instance.authStateChanges().listen((User? user) {
+      if (user == null) {
         Get.off(OnBoard());
-      }
-      else{
+      } else {
         Get.off(BottomBarScreen());
       }
-     });
+    });
   }
 
   @override
@@ -45,7 +42,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      body:LoadingScreen() ,
+      body: LoadingScreen(),
       // backgroundColor: Colors.white,
       // body: new Center(
       //   child: Container(

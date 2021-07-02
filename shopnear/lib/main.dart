@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:shopnear/home_page/home_screen.dart';
-import 'package:shopnear/home_sections/store_section.dart';
 import 'package:shopnear/profile/components/body.dart';
 import 'package:shopnear/profile/profile_screen.dart';
 import 'package:shopnear/provider/google_sign.dart';
@@ -17,8 +16,6 @@ import 'package:shopnear/screens/succes.dart';
 import 'package:shopnear/bottom_bar.dart';
 import 'package:shopnear/sellerscreen/bottom_seller_screen_navigation.dart';
 import 'package:shopnear/theme.dart';
-import 'package:shopnear/user_profile/profile_main.dart';
-
 import 'screens/splash_screen.dart';
 
 void main() async {
@@ -37,7 +34,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
           theme: theme(),
-          home: SplashScreen()),
+          home: HomeScreen()),
     );
   }
 }

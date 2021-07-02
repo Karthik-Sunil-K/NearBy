@@ -63,12 +63,20 @@ class _SignInPageState extends State<SignInPage> {
           ),
           RoundedButton(
             text: 'Login With Mail',
-            color: Color(0xff5383EC),
+            color: Color(0xff53B175),
             press: () {
               print('mail login');
             },
           ),
-          Container(
+          RoundedButton(
+            text: 'Continue with Google',
+            color: Color(0xff53B175),
+            press: () {
+              Provider.of<GoogleSignInProvider>(context, listen: false)
+                  .googleLogin();
+            },
+          ),
+          /* Container(
             margin: EdgeInsets.symmetric(vertical: 10),
             width: MediaQuery.of(context).size.width * 0.8,
             child: ClipRRect(
@@ -91,7 +99,7 @@ class _SignInPageState extends State<SignInPage> {
                 ),
               ),
             ),
-          )
+          ) */
 
           // RoundedButton(
 

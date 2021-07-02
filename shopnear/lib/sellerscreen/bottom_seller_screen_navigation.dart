@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:shopnear/home/cart_screen.dart';
-import 'package:shopnear/home/explore_screen.dart';
-import 'package:shopnear/home/home_screen.dart';
-import 'package:shopnear/home/user_screen.dart';
 import 'package:shopnear/sellerscreen/cart_screen.dart';
 import 'package:shopnear/sellerscreen/seller_home_screen.dart';
 import 'package:shopnear/sellerscreen/seller_user_screen.dart';
