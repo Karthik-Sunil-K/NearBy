@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:shopnear/home_page//cart_screen.dart';
 import 'package:shopnear/home_page/explore_screen.dart';
 import 'package:shopnear/home_page/home_screen.dart';
@@ -52,22 +53,22 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
           currentIndex: _selectedIndex,
           items: [
             BottomNavigationBarItem(
-              icon: Icon(Icons.home),
+              icon: SvgPicture.asset("assets/icons/Shop Icon.svg"),
               tooltip: 'Home',
               label: 'Home',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.youtube_searched_for),
+              icon: SvgPicture.asset("assets/icons/Heart Icon.svg"),
               tooltip: 'Explore',
               label: 'Explore',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.add_shopping_cart),
+              icon: SvgPicture.asset("assets/icons/Cart Icon.svg"),
               tooltip: 'Cart',
               label: 'Cart',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.person),
+              icon: SvgPicture.asset("assets/icons/User Icon.svg"),
               tooltip: 'User',
               label: 'User',
             ),
