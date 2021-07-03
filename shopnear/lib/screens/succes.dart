@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shopnear/components/rounded_button.dart';
 
-class Succes extends StatelessWidget {
+class SuccesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

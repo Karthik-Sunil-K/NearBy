@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopnear/seller_screen/profile/profile_screen.dart';
 
 class SellerUserScreen extends StatefulWidget {
   const SellerUserScreen({Key? key}) : super(key: key);
@@ -10,13 +11,6 @@ class SellerUserScreen extends StatefulWidget {
 class _SellerUserScreenState extends State<SellerUserScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text(
-          'Profile',
-          style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-        ),
-      ),
-    );
+    return UserProfileScreen();
   }
 }

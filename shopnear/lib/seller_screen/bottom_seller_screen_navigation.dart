@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shopnear/seller_screen/cart_screen.dart';
 import 'package:shopnear/seller_screen/seller_home_screen.dart';
-import 'package:shopnear/seller_screen/seller_user_screen.dart';
+import 'package:shopnear/seller_screen/seller_profile_screen.dart';
 
 class SellerBottomBarScreen extends StatefulWidget {
   static const routeName = '/BottomBarScreen';
@@ -44,7 +44,7 @@ class _SellerBottomBarScreenState extends State<SellerBottomBarScreen> {
         shape: CircularNotchedRectangle(),
         child: BottomNavigationBar(
           onTap: _selectedPage,
-          backgroundColor: Theme.of(context).primaryColor,
+          backgroundColor: Colors.white,
           unselectedItemColor: Colors.black,
           selectedItemColor: Color(0xff53B175),
           currentIndex: _selectedIndex,
@@ -68,6 +68,7 @@ class _SellerBottomBarScreenState extends State<SellerBottomBarScreen> {
               icon: Icon(Icons.person),
               tooltip: 'User',
               label: 'User',
+              
             ),
           ],
         ),

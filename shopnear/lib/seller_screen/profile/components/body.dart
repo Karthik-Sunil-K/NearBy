@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:shopnear/provider/google_sign.dart';
-import 'package:shopnear/seller_screen/bottom_seller_screen_navigation.dart';
+import 'package:shopnear/user_screen/bottom_bar.dart';
 
 import 'profile_menu.dart';
 import 'profile_pic.dart';
@@ -29,10 +29,10 @@ class UserProfileBody extends StatelessWidget {
             press: () {},
           ),
           ProfileMenu(
-            text: "Switch To Seller",
+            text: "Switch To User",
             icon: "assets/icons/Settings.svg",
             press: () {
-              Get.off(SellerBottomBarScreen());
+              Get.back(canPop: true);
             },
           ),
           ProfileMenu(
