@@ -1,4 +1,7 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:shopnear/provider/google_sign.dart';
 
 import 'profile_menu.dart';
 import 'profile_pic.dart';
@@ -6,6 +9,7 @@ import 'profile_pic.dart';
 class UserProfileBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final user = FirebaseAuth.instance.currentUser;
     return SingleChildScrollView(
       padding: EdgeInsets.symmetric(vertical: 20),
       child: Column(
@@ -13,12 +17,12 @@ class UserProfileBody extends StatelessWidget {
           ProfilePic(),
           SizedBox(height: 20),
           ProfileMenu(
-            text: "My Account",
+            text: user!.displayName.toString(),
             icon: "assets/icons/User Icon.svg",
             press: () => {},
           ),
           ProfileMenu(
-            text: "Notifications",
+            text: user.email.toString(),
             icon: "assets/icons/Bell.svg",
             press: () {},
           ),
@@ -35,7 +39,10 @@ class UserProfileBody extends StatelessWidget {
           ProfileMenu(
             text: "Log Out",
             icon: "assets/icons/Log out.svg",
-            press: () {},
+            press: () {
+              Provider.of<GoogleSignInProvider>(context, listen: false)
+                  .googleLogout();
+            },
           ),
         ],
       ),
