@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:shopnear/components/circularButton.dart';
 import 'package:shopnear/components/carousel.dart';
 import 'package:shopnear/components/rounded_input_field.dart';
-import 'package:shopnear/home_page/explore_screen.dart';
-import 'package:carousel_slider/carousel_slider.dart';
 
-class HomeScreen extends StatelessWidget {
+import 'package:carousel_slider/carousel_slider.dart';
+import 'package:shopnear/user_screen/items_list/producta_cards.dart';
+
+class UserHomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -126,6 +127,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ),
+            ItemsShopCards()
 
             //cards
 

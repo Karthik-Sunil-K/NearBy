@@ -1,23 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:shopnear/home_page//cart_screen.dart';
-import 'package:shopnear/home_page/explore_screen.dart';
-import 'package:shopnear/home_page/home_screen.dart';
-import 'package:shopnear/home_page/user_screen.dart';
+import 'package:shopnear/seller_screen/cart_screen.dart';
+import 'package:shopnear/seller_screen/seller_home_screen.dart';
+import 'package:shopnear/seller_screen/seller_user_screen.dart';
 
-class BottomBarScreen extends StatefulWidget {
+class SellerBottomBarScreen extends StatefulWidget {
   static const routeName = '/BottomBarScreen';
 
   @override
-  _BottomBarScreenState createState() => _BottomBarScreenState();
+  _SellerBottomBarScreenState createState() => _SellerBottomBarScreenState();
 }
 
-class _BottomBarScreenState extends State<BottomBarScreen> {
+class _SellerBottomBarScreenState extends State<SellerBottomBarScreen> {
   List _pages = [
-    HomeScreen(),
-    ExploreScreen(),
-    CartScreen(),
-    UserScreen(),
+    SellerHomeScreen(),
+    SellerCartScreen(),
+    SellerUserScreen(),
   ];
 
   /* List<Map<String, Object>> _pages;
@@ -53,22 +50,22 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
           currentIndex: _selectedIndex,
           items: [
             BottomNavigationBarItem(
-              icon: SvgPicture.asset("assets/icons/Shop Icon.svg"),
+              icon: Icon(Icons.home),
               tooltip: 'Home',
               label: 'Home',
             ),
+            // BottomNavigationBarItem(
+            //   icon: Icon(Icons.youtube_searched_for),
+            //   tooltip: 'Explore',
+            //   label: 'Explore',
+            // ),
             BottomNavigationBarItem(
-              icon: SvgPicture.asset("assets/icons/Heart Icon.svg"),
-              tooltip: 'Explore',
-              label: 'Explore',
-            ),
-            BottomNavigationBarItem(
-              icon: SvgPicture.asset("assets/icons/Cart Icon.svg"),
+              icon: Icon(Icons.add_shopping_cart),
               tooltip: 'Cart',
               label: 'Cart',
             ),
             BottomNavigationBarItem(
-              icon: SvgPicture.asset("assets/icons/User Icon.svg"),
+              icon: Icon(Icons.person),
               tooltip: 'User',
               label: 'User',
             ),
