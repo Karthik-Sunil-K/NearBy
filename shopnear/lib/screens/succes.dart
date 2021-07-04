@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:shopnear/components/rounded_button.dart';
 import 'package:shopnear/home_page/bottom_bar.dart';
 
@@ -43,16 +44,15 @@ class SuccesPage extends StatelessWidget {
           RoundedButton(
             text: 'Track Order',
             color: Color(0xff53B175),
-            press: () {},
+            press: () {
+              // Get.off(BottomBarScreen());
+            },
           ),
           RoundedButton(
             text: 'Back to Home',
             color: Color(0xff53B175),
             press: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => BottomBarScreen()),
-              );
+              Get.offAll(BottomBarScreen());
             },
           ),
         ],
