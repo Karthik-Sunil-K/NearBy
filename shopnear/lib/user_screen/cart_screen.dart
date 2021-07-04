@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:shopnear/components/rounded_button.dart';
+import 'package:shopnear/home_page/bottom_bar.dart';
+import 'package:shopnear/user_screen/items_list/producta_cards.dart';
 
 class CartScreen extends StatefulWidget {
   const CartScreen({Key? key}) : super(key: key);
@@ -12,12 +15,25 @@ class _CartScreenState extends State<CartScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Icon(Icons.arrow_back),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            //   setState(() {
+            //     Navigator.push(
+            //       context,
+            //       MaterialPageRoute(
+            //         builder: (context) => BottomBarScreen(),
+            //       ),
+            //     );
+            //   });
+          },
+        ),
         title: Column(
           children: [
             Text(
               "Your Cart",
-              style: TextStyle(color: Colors.black),
+              style:
+                  TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
             ),
             Text(
               "3 items",
@@ -26,10 +42,21 @@ class _CartScreenState extends State<CartScreen> {
           ],
         ),
       ),
-      body: Center(
-        child: Text(
-          'Cart Screen',
-          style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+      body: Container(
+        child: Column(
+          children: [
+            ItemsShopCards(),
+            ItemsShopCards(),
+            ItemsShopCards(),
+            SizedBox(
+              height: 150,
+            ),
+            RoundedButton(
+              text: 'Check Out',
+              color: Color(0xff53B175),
+              press: () {},
+            ),
+          ],
         ),
       ),
     );

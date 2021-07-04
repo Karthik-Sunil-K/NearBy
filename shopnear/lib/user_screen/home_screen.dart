@@ -4,6 +4,7 @@ import 'package:shopnear/components/carousel.dart';
 import 'package:shopnear/components/rounded_input_field.dart';
 
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:shopnear/home_page/special_offers.dart';
 import 'package:shopnear/user_screen/items_list/producta_cards.dart';
 
 class UserHomeScreen extends StatelessWidget {
@@ -24,12 +25,9 @@ class UserHomeScreen extends StatelessWidget {
             child: Column(
               children: [
                 Container(
-                  height: 60,
-                  padding: EdgeInsets.only(
-                    left: 130,
-                  ),
+                  height: 40,
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(
                         Icons.location_on_sharp,
@@ -37,8 +35,11 @@ class UserHomeScreen extends StatelessWidget {
                       ),
                       Text(
                         'Kerala, India',
+                        textAlign: TextAlign.center,
                         style: TextStyle(
-                            fontSize: 18, fontWeight: FontWeight.w600),
+                          fontSize: 18,
+                          fontWeight: FontWeight.w600,
+                        ),
                       ),
                     ],
                   ),
@@ -121,7 +122,7 @@ class UserHomeScreen extends StatelessWidget {
                     ),
                   ),
                   trailing: Text(
-                    'See All',
+                    'View All',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
@@ -132,6 +133,10 @@ class UserHomeScreen extends StatelessWidget {
                 ItemsShopCards(),
                 ItemsShopCards(),
                 ItemsShopCards(),
+                ItemsShopCards(),
+                ItemsShopCards(),
+                ItemsShopCards(),
+                SpecialOffers(),
               ],
             ),
           ),

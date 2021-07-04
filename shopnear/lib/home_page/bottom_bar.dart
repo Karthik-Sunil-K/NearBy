@@ -21,18 +21,6 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
     UserScreen(),
   ];
 
-  /* List<Map<String, Object>> _pages;
-  int _selectedIndex = 0;
-  @override
-  void initState() {
-    _pages = [
-      {'page': Home(), 'title': 'Home Screen'},
-      {'page': User(), 'title': 'User Screen'},
-    ];
-    super.initState();
-  }
- */
-
   int _selectedIndex = 0;
   void _selectedPage(int index) {
     setState(() {
@@ -54,22 +42,34 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
           currentIndex: _selectedIndex,
           items: [
             BottomNavigationBarItem(
-              icon: SvgPicture.asset("assets/icons/Shop Icon.svg"),
+              icon: Icon(
+                Icons.home,
+                size: 30,
+              ),
               tooltip: 'Home',
               label: 'Home',
             ),
             BottomNavigationBarItem(
-              icon: SvgPicture.asset("assets/icons/Heart Icon.svg"),
+              icon: Icon(
+                Icons.favorite_outline,
+                size: 30,
+              ),
               tooltip: 'Explore',
               label: 'Explore',
             ),
             BottomNavigationBarItem(
-              icon: SvgPicture.asset("assets/icons/Cart Icon.svg"),
+              icon: Icon(
+                Icons.add_shopping_cart,
+                size: 30,
+              ),
               tooltip: 'Cart',
               label: 'Cart',
             ),
             BottomNavigationBarItem(
-              icon: SvgPicture.asset("assets/icons/User Icon.svg"),
+              icon: Icon(
+                Icons.person,
+                size: 30,
+              ),
               tooltip: 'User',
               label: 'User',
             ),

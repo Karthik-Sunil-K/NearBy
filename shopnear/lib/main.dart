@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
+import 'package:shopnear/home_page/special_offers.dart';
 import 'package:shopnear/provider/google_sign.dart';
 import 'package:shopnear/screens/loading_screen.dart';
 import 'package:shopnear/screens/location.dart';
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
           theme: theme(),
-          home: SuccesPage()),
+          home: BottomBarScreen()),
     );
   }
 }
