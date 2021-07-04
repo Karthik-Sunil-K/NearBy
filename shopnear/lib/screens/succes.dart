@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shopnear/components/rounded_button.dart';
-import 'package:shopnear/home_page/bottom_bar.dart';
+
+import 'package:shopnear/user_screen/home_page/bottom_bar.dart';
 
 class SuccesPage extends StatelessWidget {
   @override

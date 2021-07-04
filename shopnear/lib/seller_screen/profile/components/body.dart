@@ -3,10 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:shopnear/provider/google_sign.dart';
+import 'package:shopnear/user_screen/home_page/bottom_bar.dart';
 import 'profile_menu.dart';
 import 'profile_pic.dart';
 
-class UserProfileBody extends StatelessWidget {
+class SellerProfileBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final user = FirebaseAuth.instance.currentUser;
@@ -30,7 +31,7 @@ class UserProfileBody extends StatelessWidget {
             text: "Switch To User",
             icon: "assets/icons/Settings.svg",
             press: () {
-              Get.back(canPop: true);
+              Get.to(BottomBarScreen());
             },
           ),
           ProfileMenu(

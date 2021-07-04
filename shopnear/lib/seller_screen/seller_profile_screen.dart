@@ -11,6 +11,6 @@ class SellerUserScreen extends StatefulWidget {
 class _SellerUserScreenState extends State<SellerUserScreen> {
   @override
   Widget build(BuildContext context) {
-    return UserProfileScreen();
+    return SellerProfileScreen();
   }
 }

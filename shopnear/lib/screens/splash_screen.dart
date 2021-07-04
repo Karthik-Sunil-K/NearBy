@@ -3,9 +3,10 @@ import 'dart:async';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shopnear/home_page/bottom_bar.dart';
+
 import 'package:shopnear/screens/loading_screen.dart';
 import 'package:shopnear/screens/onboard.dart';
+import 'package:shopnear/user_screen/home_page/bottom_bar.dart';
 
 class SplashScreen extends StatefulWidget {
   @override

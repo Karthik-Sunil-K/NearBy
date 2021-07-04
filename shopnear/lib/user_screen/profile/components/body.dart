@@ -32,7 +32,7 @@ class UserProfileBody extends StatelessWidget {
             text: "Switch To Seller",
             icon: "assets/icons/Settings.svg",
             press: () {
-              Get.off(SellerBottomBarScreen());
+              Get.to(SellerBottomBarScreen());
             },
           ),
           ProfileMenu(

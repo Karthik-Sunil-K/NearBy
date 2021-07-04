@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shopnear/components/rounded_button.dart';
-import 'package:shopnear/home_page/bottom_bar.dart';
+
 import 'package:shopnear/screens/succes.dart';
 import 'package:shopnear/screens/succes.dart';
 import 'package:shopnear/user_screen/items_list/producta_cards.dart';

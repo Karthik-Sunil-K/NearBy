@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'components/body.dart';
 
-class UserProfileScreen extends StatelessWidget {
+class SellerProfileScreen extends StatelessWidget {
   static String routeName = "/profile";
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class UserProfileScreen extends StatelessWidget {
           style: TextStyle(color: Colors.black),
         ),
       ),
-      body: UserProfileBody(),
+      body: SellerProfileBody(),
     );
   }
 }
