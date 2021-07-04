@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:shopnear/provider/google_sign.dart';
-import 'package:shopnear/user_screen/bottom_bar.dart';
-
 import 'profile_menu.dart';
 import 'profile_pic.dart';
 

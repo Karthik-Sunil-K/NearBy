@@ -14,27 +14,17 @@ class _ExploreScreenState extends State<ExploreScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back),
-          onPressed: () {
-            //   setState(() {
-            //     Navigator.push(
-            //       context,
-            //       MaterialPageRoute(
-            //         builder: (context) => BottomBarScreen(),
-            //       ),
-            //     );
-            //   });
-          },
-        ),
-        title: Column(
-          children: [
-            Text(
-              "Favourites",
-              style:
-                  TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
-            ),
-          ],
+        title: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            children: [
+              Text(
+                "Favourites",
+                style:
+                    TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
+              ),
+            ],
+          ),
         ),
       ),
       body: Container(
