@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shopnear/user_screen/items_list/producta_cards.dart';
+import 'package:shopnear/user_screen/items_list/shop_cards.dart';
 
 class AddToCart extends StatefulWidget {
   const AddToCart({Key? key}) : super(key: key);

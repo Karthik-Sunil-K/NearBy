@@ -6,7 +6,7 @@ import 'package:shopnear/components/rounded_input_field.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:shopnear/user_screen/home_page/special_offers.dart';
 
-import 'package:shopnear/user_screen/items_list/producta_cards.dart';
+import 'package:shopnear/user_screen/items_list/shop_cards.dart';
 
 class UserHomeScreen extends StatelessWidget {
   @override

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shopnear/components/rounded_button.dart';
-import 'package:shopnear/user_screen/items_list/producta_cards.dart';
+import 'package:shopnear/screens/version_details.dart';
+import 'package:shopnear/user_screen/items_list/shop_cards.dart';
 
 class ExploreScreen extends StatefulWidget {
   const ExploreScreen({Key? key}) : super(key: key);
@@ -12,38 +13,6 @@ class ExploreScreen extends StatefulWidget {
 class _ExploreScreenState extends State<ExploreScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Column(
-            children: [
-              Text(
-                "Favourites",
-                style:
-                    TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
-              ),
-            ],
-          ),
-        ),
-      ),
-      body: Container(
-        child: Column(
-          children: [
-            ItemsShopCards(),
-            ItemsShopCards(),
-            ItemsShopCards(),
-            SizedBox(
-              height: 150,
-            ),
-            RoundedButton(
-              text: 'Explore More',
-              color: Color(0xff53B175),
-              press: () {},
-            ),
-          ],
-        ),
-      ),
-    );
+    return VersionTwoDetails();
   }
 }

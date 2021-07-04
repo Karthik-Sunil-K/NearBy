@@ -4,7 +4,7 @@ import 'package:shopnear/components/rounded_button.dart';
 
 import 'package:shopnear/screens/succes.dart';
 import 'package:shopnear/screens/succes.dart';
-import 'package:shopnear/user_screen/items_list/producta_cards.dart';
+import 'package:shopnear/user_screen/items_list/shop_cards.dart';
 
 class CartScreen extends StatefulWidget {
   const CartScreen({Key? key}) : super(key: key);

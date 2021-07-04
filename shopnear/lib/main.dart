@@ -11,12 +11,15 @@ import 'package:shopnear/screens/SignInPage.dart';
 import 'package:shopnear/screens/onboard.dart';
 import 'package:shopnear/screens/splash_screen.dart';
 import 'package:shopnear/screens/succes.dart';
+import 'package:shopnear/screens/version_details.dart';
 
 import 'package:shopnear/seller_screen/bottom_seller_screen_navigation.dart';
 
 import 'package:shopnear/theme.dart';
 import 'package:shopnear/user_screen/home_page/bottom_bar.dart';
 import 'package:shopnear/user_screen/home_screen.dart';
+import 'package:shopnear/user_screen/items_list/detailed_shop.dart';
+import 'package:shopnear/user_screen/items_list/shop_cards.dart';
 import 'screens/splash_screen.dart';
 
 void main() async {

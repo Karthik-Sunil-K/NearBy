@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:shopnear/user_screen/items_list/detailed_shop.dart';
 
 class ItemsShopCards extends StatelessWidget {
   const ItemsShopCards({Key? key}) : super(key: key);
@@ -12,7 +13,9 @@ class ItemsShopCards extends StatelessWidget {
         child: Column(
           children: [
             GestureDetector(
-              onTap: () {},
+              onTap: () {
+               Get.to(ListedItemsOfShop());
+              },
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
