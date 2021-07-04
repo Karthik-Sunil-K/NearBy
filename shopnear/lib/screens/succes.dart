@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shopnear/components/rounded_button.dart';
+import 'package:shopnear/home_page/bottom_bar.dart';
 
 class SuccesPage extends StatelessWidget {
   @override
@@ -11,9 +12,10 @@ class SuccesPage extends StatelessWidget {
           Container(
             child: Image.asset(
               'assets/images/succes.PNG',
-              fit: BoxFit.contain,
+              fit: BoxFit.cover,
+              width: MediaQuery.of(context).size.width,
+              height: 350,
             ),
-            width: MediaQuery.of(context).size.width,
           ),
           Text(
             'Your Order has been \n accepted',
@@ -36,7 +38,7 @@ class SuccesPage extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 45,
+            height: 80,
           ),
           RoundedButton(
             text: 'Track Order',
@@ -44,10 +46,14 @@ class SuccesPage extends StatelessWidget {
             press: () {},
           ),
           RoundedButton(
-            text: 'Back to home',
-            color: Colors.white,
-            textColor: Colors.black,
-            press: () {},
+            text: 'Back to Home',
+            color: Color(0xff53B175),
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => BottomBarScreen()),
+              );
+            },
           ),
         ],
       ),

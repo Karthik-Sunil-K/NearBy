@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shopnear/components/rounded_button.dart';
 import 'package:shopnear/home_page/bottom_bar.dart';
+import 'package:shopnear/screens/succes.dart';
+import 'package:shopnear/screens/succes.dart';
 import 'package:shopnear/user_screen/items_list/producta_cards.dart';
 
 class CartScreen extends StatefulWidget {
@@ -54,7 +56,10 @@ class _CartScreenState extends State<CartScreen> {
             RoundedButton(
               text: 'Check Out',
               color: Color(0xff53B175),
-              press: () {},
+              press: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => SuccesPage()));
+              },
             ),
           ],
         ),
