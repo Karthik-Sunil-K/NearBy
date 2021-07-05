@@ -128,12 +128,7 @@ class _LocationPageState extends State<LocationPage> {
               color: Color(0xff53B175),
               press: () {
                 if (myController.text.length == 6){
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => LoggedInScreen(),
-                    ),
-                  );
+                  Get.off(LoggedInScreen());
                 }
                 else{
                   print('not permit');
