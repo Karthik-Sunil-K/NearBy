@@ -25,7 +25,7 @@ class UserProfileBody extends StatelessWidget {
           ),
           ProfileMenu(
             text: user.email.toString(),
-            icon: "assets/icons/Bell.svg",
+            icon: "assets/icons/Mail.svg",
             press: () {},
           ),
           ProfileMenu(
