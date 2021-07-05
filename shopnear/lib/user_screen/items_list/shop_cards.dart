@@ -3,7 +3,16 @@ import 'package:get/get.dart';
 import 'package:shopnear/user_screen/items_list/detailed_shop.dart';
 
 class ItemsShopCards extends StatelessWidget {
-  const ItemsShopCards({Key? key}) : super(key: key);
+  String shopimage;
+  String shopeName;
+
+   ItemsShopCards({
+    
+    
+    required this.shopimage,
+    required this.shopeName,
+
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -32,8 +41,9 @@ class ItemsShopCards extends StatelessWidget {
                         //container for image
                         Container(
                           height: 80,
-                          color: Colors.black,
+                          
                           width: 80,
+                          child: Image.asset(shopimage),
                         ),
                         SizedBox(
                           width: 20,
@@ -41,10 +51,10 @@ class ItemsShopCards extends StatelessWidget {
                         ),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              "Blueberry Muffins",
+                              shopeName,
                               style: TextStyle(
                                 fontSize: 14,
                                 fontWeight: FontWeight.w600,

@@ -38,9 +38,9 @@ class _CartScreenState extends State<CartScreen> {
       body: Container(
         child: Column(
           children: [
-            ItemsShopCards(),
-            ItemsShopCards(),
-            ItemsShopCards(),
+            // ItemsShopCards(shopimage: '',),
+            // ItemsShopCards(shopimage: '',),
+            // ItemsShopCards(shopimage: '',),
             SizedBox(
               height: 150,
             ),
