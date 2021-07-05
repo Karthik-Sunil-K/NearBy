@@ -21,13 +21,21 @@ class ListedItemsOfShop extends StatelessWidget {
       body: ListView(
         children: [
           ItemsProductCard(),
+          SizedBox(height: 10,),
           ItemsProductCard(),
+          SizedBox(height: 10,),
           ItemsProductCard(),
+          SizedBox(height: 10,),
           ItemsProductCard(),
+          SizedBox(height: 10,),
           ItemsProductCard(),
+          SizedBox(height: 10,),
           ItemsProductCard(),
+          SizedBox(height: 10,),
           ItemsProductCard(),
+          SizedBox(height: 10,),
           ItemsProductCard(),
+          SizedBox(height: 10,),
         ],
       ),
     );

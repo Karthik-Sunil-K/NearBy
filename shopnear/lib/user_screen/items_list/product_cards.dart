@@ -8,10 +8,9 @@ class ItemsProductCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
+      height: 70,
       width: Get.width,
-      child: Column(
-        children: [
+      child: 
           GestureDetector(
             onTap: () {},
             // child: Padding(
@@ -24,8 +23,8 @@ class ItemsProductCard extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(15),
                 child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.start,
+                  // crossAxisAlignment: CrossAxisAlignment.start,
+                  // mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     //container for image
                     // Container(
@@ -38,8 +37,8 @@ class ItemsProductCard extends StatelessWidget {
                     //   height: 40,
                     // ),
                     Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
+                      // mainAxisAlignment: MainAxisAlignment.center,
+                      // crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Text(
                           "Blueberry Muffins",
@@ -64,14 +63,24 @@ class ItemsProductCard extends StatelessWidget {
                         ),
                       ],
                     ),
+                    SizedBox(
+                      width: Get.width/2,
+                    ),
+                    Container(
+                      height: 40,
+                      width: 40,
+                      
+                      child: IconButton(icon: Icon(Icons.add),onPressed: (){},),
+                    ),
+                    
                   ],
                 ),
+                
               ),
             ),
           ),
-          // ),
-        ],
-      ),
+        
+       
     );
   }
 }

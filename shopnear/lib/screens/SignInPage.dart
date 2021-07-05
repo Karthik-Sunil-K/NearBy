@@ -51,7 +51,7 @@ class _SignInPageState extends State<SignInPage> {
                 fontWeight: FontWeight.w400),
           ),
           Text(
-            "LOGIN",
+            "Login/Signup",
             style: TextStyle(
                 color: Colors.grey[700],
                 fontSize: 18,
@@ -59,15 +59,15 @@ class _SignInPageState extends State<SignInPage> {
                 fontWeight: FontWeight.w400),
           ),
           SizedBox(
-            height: 30,
+            height: 60,
           ),
-          RoundedButton(
-            text: 'Login With Mail',
-            color: Color(0xff53B175),
-            press: () {
-              print('mail login');
-            },
-          ),
+          // RoundedButton(
+          //   text: 'Login With Mail',
+          //   color: Color(0xff53B175),
+          //   press: () {
+          //     print('mail login');
+          //   },
+          // ),
           RoundedButton(
             text: 'Continue with Google',
             color: Color(0xff53B175),
