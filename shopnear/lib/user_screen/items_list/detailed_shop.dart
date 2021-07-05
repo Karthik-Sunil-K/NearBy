@@ -11,7 +11,7 @@ class ListedItemsOfShop extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios_new),
+          icon: Icon(Icons.arrow_back_ios),
           onPressed: () {
             Get.back(canPop: true);
             print('jj');
@@ -21,21 +21,37 @@ class ListedItemsOfShop extends StatelessWidget {
       body: ListView(
         children: [
           ItemsProductCard(),
-          SizedBox(height: 10,),
+          SizedBox(
+            height: 10,
+          ),
           ItemsProductCard(),
-          SizedBox(height: 10,),
+          SizedBox(
+            height: 10,
+          ),
           ItemsProductCard(),
-          SizedBox(height: 10,),
+          SizedBox(
+            height: 10,
+          ),
           ItemsProductCard(),
-          SizedBox(height: 10,),
+          SizedBox(
+            height: 10,
+          ),
           ItemsProductCard(),
-          SizedBox(height: 10,),
+          SizedBox(
+            height: 10,
+          ),
           ItemsProductCard(),
-          SizedBox(height: 10,),
+          SizedBox(
+            height: 10,
+          ),
           ItemsProductCard(),
-          SizedBox(height: 10,),
+          SizedBox(
+            height: 10,
+          ),
           ItemsProductCard(),
-          SizedBox(height: 10,),
+          SizedBox(
+            height: 10,
+          ),
         ],
       ),
     );

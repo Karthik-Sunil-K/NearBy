@@ -20,6 +20,7 @@ import 'package:shopnear/user_screen/home_page/bottom_bar.dart';
 import 'package:shopnear/user_screen/home_screen.dart';
 import 'package:shopnear/user_screen/items_list/detailed_shop.dart';
 import 'package:shopnear/user_screen/items_list/shop_cards.dart';
+import 'package:shopnear/user_screen/profile/profile_screen.dart';
 import 'screens/splash_screen.dart';
 
 void main() async {
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
           theme: theme(),
-          home: BottomBarScreen()),
+          home: SplashScreen()),
     );
   }
 }

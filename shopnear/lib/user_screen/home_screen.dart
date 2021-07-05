@@ -131,14 +131,29 @@ class UserHomeScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                ItemsShopCards(shopimage:'assets/shops/shop1.jpg',shopeName: 'Saathi Stores',),
-                ItemsShopCards(shopimage:'assets/shops/shop2.jpg' ,shopeName: 'Aswathis'),
-                ItemsShopCards(shopimage:'assets/shops/shop3.jpg' ,shopeName: 'New world'),
-                ItemsShopCards(shopimage:'assets/shops/shop4.jpg' ,shopeName: 'Keerthi Groceries'),
-                ItemsShopCards(shopimage:'assets/shops/shop5.jpg' ,shopeName: 'iris bakes'),
-                ItemsShopCards(shopimage:'assets/shops/shop6.jpg' ,shopeName: 'Dreams Store'),
-                ItemsShopCards(shopimage:'assets/shops/shop7.jpg' ,shopeName: 'Smarana Books'),
-                ItemsShopCards(shopimage:'assets/shops/shop6.jpg' ,shopeName: 'K&K Shop'),
+                ItemsShopCards(
+                  shopimage: 'assets/shops/shop1.jpg',
+                  shopeName: 'Saathi Stores',
+                ),
+                ItemsShopCards(
+                    shopimage: 'assets/shops/shop2.jpg', shopeName: 'Aswathis'),
+                ItemsShopCards(
+                    shopimage: 'assets/shops/shop3.jpg',
+                    shopeName: 'New world'),
+                ItemsShopCards(
+                    shopimage: 'assets/shops/shop4.jpg',
+                    shopeName: 'Keerthi Groceries'),
+                ItemsShopCards(
+                    shopimage: 'assets/shops/shop5.jpg',
+                    shopeName: 'Iris bakes'),
+                ItemsShopCards(
+                    shopimage: 'assets/shops/shop6.jpg',
+                    shopeName: 'Dreams Store'),
+                ItemsShopCards(
+                    shopimage: 'assets/shops/shop7.jpg',
+                    shopeName: 'Smarana Books'),
+                ItemsShopCards(
+                    shopimage: 'assets/shops/shop6.jpg', shopeName: 'K&K Shop'),
                 SpecialOffers(),
               ],
             ),
