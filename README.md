@@ -1,6 +1,6 @@
 # june-jock
 <h1>What is <i style="color: green;">ShopNear</i></h1>
-<p style="font-size: 25px;">Shop near is Multi Ventor online shopping platform exclusively Targetted for village shop owners and Uers</p>
+<p style="font-size: 25px;">Shop near is Multi Vendor online shopping platform exclusively Targetted for village shop owners and Uers</p>
 <p style="font-size: 25px;">The app have only single login and You can switch it into User aswell as Seller in a Single Tap</p>
 <h1><i style="color: green;">How to Use and How This Work</i></h1>
 <p>People and login with their <i><strong>Google Account</strong></i>And We Were asking The Pincode of Your Place</p>
@@ -23,4 +23,6 @@
 <img src="https://user-images.githubusercontent.com/62179996/124600312-3586ad00-de84-11eb-9f28-765fe93932bd.png" width="30%" align="left" padding='50'/>
 <img src="https://user-images.githubusercontent.com/62179996/124600334-3a4b6100-de84-11eb-9f71-9a43653c316a.png" width="30%" align="left" padding='50'/>
 <img src="https://user-images.githubusercontent.com/62179996/124600429-53eca880-de84-11eb-8fc6-2deb94935322.png" width="30%" align="left" padding='50'/>
-<img src="https://user-images.githubusercontent.com/62179996/124600429-53eca880-de84-11eb-8fc6-2deb94935322.png" width="30%" align="left" padding='50'/>
+<img src="https://user-images.githubusercontent.com/62179996/124638217-52cd7280-dea8-11eb-9d1c-40ea7f55ba91.png" width="30%" align="left" padding='50'/>
+
+
