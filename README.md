@@ -16,7 +16,7 @@
 <p><strong>You can Compare the Price bwtween 2 shops and Purchase the goods at favourable prices</strong></p>
 <p><i><strong>Save Your wallet from overpriced ones </strong></i></p>
 
-Screen recorded Video [clickHere][screen]
+Screen recorded Video [Click Here][screen]
 
 
 <img src="https://user-images.githubusercontent.com/62179996/124600161-10923a00-de84-11eb-91d8-9bc8d3ed304d.png" width="30%" align="left" padding='50'/>
