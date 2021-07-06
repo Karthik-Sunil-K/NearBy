@@ -22,6 +22,13 @@ class _CartScreenState extends State<CartScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Get.back(canPop: true);
+            print('jj');
+          },
+        ),
         title: Column(
           children: [
             Text(
@@ -43,13 +50,13 @@ class _CartScreenState extends State<CartScreen> {
               height: 20,
             ),
             ItemsProductCard(
-                productprice: '43', productName: 'Rise', productUnit: '1 Kg'),
+                productprice: '43', productName: 'Rice', productUnit: '1 Kg'),
             SizedBox(
               height: 10,
             ),
             ItemsProductCard(
                 productprice: '55',
-                productName: 'White Rise',
+                productName: 'White Rice',
                 productUnit: '1 Kg'),
             SizedBox(
               height: 10,
@@ -60,13 +67,13 @@ class _CartScreenState extends State<CartScreen> {
               productUnit: '1 Kg',
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.38,
+              height: MediaQuery.of(context).size.height * 0.30,
             ),
             RoundedButton(
                 text: 'Place Order',
                 color: Color(0xff53B175),
                 press: () {
-                  Get.off(SuccesPage());
+                  Get.to(SuccesPage());
                 }),
           ],
         ),

@@ -5,19 +5,16 @@ import 'package:provider/provider.dart';
 import 'package:flutter/services.dart';
 import 'package:shopnear/provider/google_sign.dart';
 
-
 //page import
 
 import 'package:shopnear/theme.dart';
+import 'package:shopnear/user_screen/home_page/bottom_bar.dart';
 import 'screens/splash_screen.dart';
-
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-   SystemChrome.setPreferredOrientations([
-    DeviceOrientation.portraitUp,
-    DeviceOrientation.portraitDown
-  ]);
+  SystemChrome.setPreferredOrientations(
+      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
   await Firebase.initializeApp();
   runApp(MyApp());
 }
@@ -32,7 +29,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
           theme: theme(),
-          home: SplashScreen()),
+          home: BottomBarScreen()),
     );
   }
 }
