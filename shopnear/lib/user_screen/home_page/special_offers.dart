@@ -30,21 +30,33 @@ class SpecialOffers extends StatelessWidget {
             child: Row(
               children: [
                 SpecialOfferCard(
-                  image: "assets/images/b2.jpg",
+                  image: "assets/images/b7.jpg",
                   category: "Herbals",
                   numOfBrands: 18,
                   press: () {},
                 ),
                 SpecialOfferCard(
-                  image: "assets/images/b2.jpg",
+                  image: "assets/images/b4.jpg",
                   category: "Fashion",
                   numOfBrands: 24,
                   press: () {},
                 ),
                 SpecialOfferCard(
-                  image: "assets/images/b2.jpg",
-                  category: "Fashion",
-                  numOfBrands: 24,
+                  image: "assets/images/b8.jpg",
+                  category: "Grocery",
+                  numOfBrands: 22,
+                  press: () {},
+                ),
+                SpecialOfferCard(
+                  image: "assets/images/b10.jpg",
+                  category: "Masks",
+                  numOfBrands: 8,
+                  press: () {},
+                ),
+                SpecialOfferCard(
+                  image: "assets/images/b9.jpg",
+                  category: "Dressing",
+                  numOfBrands: 14,
                   press: () {},
                 ),
                 SizedBox(width: 20),
@@ -76,15 +88,15 @@ class SpecialOfferCard extends StatelessWidget {
       child: GestureDetector(
         onTap: press,
         child: SizedBox(
-          width: 200,
-          height: 90,
+          width: 210,
+          height: 120,
           child: ClipRRect(
             borderRadius: BorderRadius.circular(20),
             child: Stack(
               children: [
                 Image.asset(
                   image,
-                  fit: BoxFit.fill,
+                  fit: BoxFit.cover,
                 ),
                 Container(
                   decoration: BoxDecoration(
