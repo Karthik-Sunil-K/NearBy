@@ -50,14 +50,14 @@ class ItemsProductCard extends StatelessWidget {
                         Row(
                           children: [
                             Text(
-                              "  10 mins",
+                              ".",
                               style:
-                                  TextStyle(fontSize: 11, color: Colors.grey),
+                                  TextStyle(fontSize: 11, color: Colors.green),
                             ),
                             Text(
-                              "  1 serving",
+                              "  Opened Now",
                               style:
-                                  TextStyle(fontSize: 11, color: Colors.grey),
+                                  TextStyle(fontSize: 11, color: Colors.black),
                             )
                           ],
                         ),

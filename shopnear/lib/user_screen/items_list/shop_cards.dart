@@ -5,13 +5,14 @@ import 'package:shopnear/user_screen/items_list/detailed_shop.dart';
 class ItemsShopCards extends StatelessWidget {
   String shopimage;
   String shopeName;
+  bool status;
 
-   ItemsShopCards({
-    
-    
+
+  ItemsShopCards({
     required this.shopimage,
     required this.shopeName,
 
+    required this.status,
   });
 
   @override
@@ -23,7 +24,10 @@ class ItemsShopCards extends StatelessWidget {
           children: [
             GestureDetector(
               onTap: () {
-               Get.to(ListedItemsOfShop());
+                if(status==true)
+                Get.to(ListedItemsOfShop());
+                else
+                (){};
               },
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -41,7 +45,6 @@ class ItemsShopCards extends StatelessWidget {
                         //container for image
                         Container(
                           height: 80,
-                          
                           width: 80,
                           child: Image.asset(shopimage),
                         ),
@@ -62,16 +65,23 @@ class ItemsShopCards extends StatelessWidget {
                             ),
                             Row(
                               children: [
-                                Text(
-                                  "  10 mins",
-                                  style: TextStyle(
-                                      fontSize: 11, color: Colors.grey),
-                                ),
-                                Text(
-                                  "  1 serving",
-                                  style: TextStyle(
-                                      fontSize: 11, color: Colors.grey),
-                                )
+                                // Text(
+                                //   "Opened Now",
+                                //   style: TextStyle(
+                                //       fontSize: 11, color: Colors.grey),
+                                // ),
+                                if (status == true)
+                                  Text(
+                                    "Opened Now",
+                                    style: TextStyle(
+                                        fontSize: 11, color: Colors.green),
+                                  )
+                                else
+                                  Text(
+                                    "Closed Now",
+                                    style: TextStyle(
+                                        fontSize: 11, color: Colors.red),
+                                  )
                               ],
                             ),
                           ],
