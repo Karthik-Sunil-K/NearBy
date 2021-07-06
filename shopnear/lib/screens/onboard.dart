@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:shopnear/components/rounded_button.dart';
 import 'package:shopnear/screens/loggedIn_screen.dart';
 import 'package:shopnear/screens/location.dart';
@@ -10,6 +11,8 @@ class OnBoard extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: Container(
+        height: Get.height,
+        width: Get.width,
         decoration: BoxDecoration(
           image: DecorationImage(
             fit: BoxFit.cover,
@@ -20,7 +23,7 @@ class OnBoard extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SizedBox(
-              height: 150,
+              height: 100,
             ),
             Container(
               child: Image.asset(

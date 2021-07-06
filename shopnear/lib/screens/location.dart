@@ -24,21 +24,23 @@ class _LocationPageState extends State<LocationPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
+      
         child: Column(
           children: [
-            SizedBox(
-              height: 25,
-            ),
+            // SizedBox(
+            //   height: 25,
+            // ),
             Container(
               child: Image.asset(
                 'assets/images/loc.PNG',
                 fit: BoxFit.contain,
               ),
-              width: MediaQuery.of(context).size.width,
+              width: Get.width,
+            
             ),
-            SizedBox(
-              height: 25,
-            ),
+            // SizedBox(
+            //   height: 25,
+            // ),
             Text(
               'Select your location',
               style: TextStyle(
@@ -48,9 +50,9 @@ class _LocationPageState extends State<LocationPage> {
                 fontWeight: FontWeight.w500,
               ),
             ),
-            SizedBox(
-              height: 25,
-            ),
+            // SizedBox(
+            //   height: 25,
+            // ),
             Text(
               'Switch on your location to stay in tune with \n what’s happening in your area',
               textAlign: TextAlign.center,
@@ -121,9 +123,9 @@ class _LocationPageState extends State<LocationPage> {
                 ),
               ),
             ),
-            SizedBox(
-              height: 30,
-            ),
+            // SizedBox(
+            //   height: 30,
+            // ),
             RoundedButton(
               text: 'Submit',
               color: Color(0xff53B175),
