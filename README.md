@@ -26,8 +26,8 @@ Screen recorded Video [clickHere][screen]
 <img src="https://user-images.githubusercontent.com/62179996/124600334-3a4b6100-de84-11eb-9f71-9a43653c316a.png" width="30%" align="left" padding='50'/>
 <img src="https://user-images.githubusercontent.com/62179996/124600429-53eca880-de84-11eb-8fc6-2deb94935322.png" width="30%" align="left" padding='50'/>
 <img src="https://user-images.githubusercontent.com/62179996/124638217-52cd7280-dea8-11eb-9d1c-40ea7f55ba91.png" width="30%" align="left" padding='50'/>
-<img src="https://user-images.githubusercontent.com/62179996/124650256-266d2280-deb7-11eb-9e99-35d94e96bb13.mp4" width="30%" align="left" padding='50'/>
 
-[screen]: https://github.com/Karthik-Sunil-K/custom-bot-s4-EC-tkmce
+
+[screen]: https://user-images.githubusercontent.com/62179996/124650256-266d2280-deb7-11eb-9e99-35d94e96bb13.mp4
 
 
