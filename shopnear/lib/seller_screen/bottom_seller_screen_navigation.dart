@@ -60,15 +60,14 @@ class _SellerBottomBarScreenState extends State<SellerBottomBarScreen> {
             //   label: 'Explore',
             // ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.add_shopping_cart),
-              tooltip: 'Cart',
-              label: 'Cart',
+              icon: Icon(Icons.explore_sharp),
+              tooltip: 'Explore',
+              label: 'Explore',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person),
               tooltip: 'User',
               label: 'User',
-              
             ),
           ],
         ),
