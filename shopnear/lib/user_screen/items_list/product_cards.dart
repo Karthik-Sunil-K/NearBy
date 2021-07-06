@@ -55,6 +55,7 @@ class ItemsProductCard extends StatelessWidget {
                         style: TextStyle(fontSize: 11, color: Colors.black),
                       ),
                     ),
+                    SizedBox(width: 9,),
                     Text(
                       productprice,
                       style: TextStyle(fontSize: 11, color: Colors.black),
