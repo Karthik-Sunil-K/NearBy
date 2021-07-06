@@ -6,6 +6,7 @@ import 'package:shopnear/screens/succes.dart';
 import 'package:shopnear/screens/succes.dart';
 import 'package:shopnear/screens/version_details.dart';
 import 'package:shopnear/user_screen/home_page/bottom_bar.dart';
+import 'package:shopnear/user_screen/items_list/product_cards.dart';
 import 'package:shopnear/user_screen/items_list/shop_cards.dart';
 
 class CartScreen extends StatefulWidget {
@@ -19,6 +20,57 @@ class _CartScreenState extends State<CartScreen> {
   @override
   @override
   Widget build(BuildContext context) {
-    return VersionTwoDetails();
+    return Scaffold(
+      appBar: AppBar(
+        title: Column(
+          children: [
+            Text(
+              "Your Cart",
+              style:
+                  TextStyle(color: Colors.black, fontWeight: FontWeight.w600),
+            ),
+            Text(
+              "3 items",
+              style: Theme.of(context).textTheme.caption,
+            ),
+          ],
+        ),
+      ),
+      body: Container(
+        child: Column(
+          children: [
+            SizedBox(
+              height: 20,
+            ),
+            ItemsProductCard(
+                productprice: '43', productName: 'Rise', productUnit: '1 Kg'),
+            SizedBox(
+              height: 10,
+            ),
+            ItemsProductCard(
+                productprice: '55',
+                productName: 'White Rise',
+                productUnit: '1 Kg'),
+            SizedBox(
+              height: 10,
+            ),
+            ItemsProductCard(
+              productprice: '30',
+              productName: 'Wheat',
+              productUnit: '1 Kg',
+            ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.35,
+            ),
+            RoundedButton(
+                text: 'Place Order',
+                color: Color(0xff53B175),
+                press: () {
+                  Get.off(SuccesPage());
+                }),
+          ],
+        ),
+      ),
+    );
   }
 }

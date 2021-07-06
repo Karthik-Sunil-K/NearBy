@@ -53,28 +53,26 @@ class OnBoard extends StatelessWidget {
               height: 70,
             ),
             Container(
-              margin: EdgeInsets.symmetric(vertical: 10),
-              width: size.width * 0.8,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: FlatButton(
-                  padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
-                  color: Color(0xff53B175),
-                  onPressed: () {
-                    Get.off(LocationPage);
-                  },
-                  child: Text(
-                    'Get Started',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w600,
-                      fontSize: 18,
+                margin: EdgeInsets.symmetric(vertical: 10),
+                width: size.width * 0.8,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: FlatButton(
+                    padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+                    color: Color(0xff53B175),
+                    onPressed: () {
+                      Get.off(LocationPage());
+                    },
+                    child: Text(
+                      'Get Started',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w600,
+                        fontSize: 18,
+                      ),
                     ),
-
                   ),
-                ),
-              )
-            )
+                ))
           ],
         ),
       ),

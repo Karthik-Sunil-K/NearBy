@@ -24,13 +24,50 @@ class _ExploreScreenState extends State<ExploreScreen> {
           style: TextStyle(color: Colors.black),
         ),
       ),
-      body: Container(
-        child: Column(
-          children: [
-            DiscountBanner(),
-            Categories(),
-            SpecialOffers(),
-          ],
+      body: SingleChildScrollView(
+        child: Container(
+          child: Column(
+            children: [
+              DiscountBanner(),
+              Categories(),
+              SpecialOffers(),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                leading: Text(
+                  'Suggested For You',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
+                ),
+                trailing: Text(
+                  'View All',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16,
+                    color: Color(0xff53B175),
+                  ),
+                ),
+              ),
+              ItemsShopCards(
+                shopimage: 'assets/shops/shop4.jpg',
+                shopeName: 'Keerthi Groceries',
+                status: true,
+              ),
+              ItemsShopCards(
+                shopimage: 'assets/shops/shop5.jpg',
+                shopeName: 'Iris bakes',
+                status: true,
+              ),
+              ItemsShopCards(
+                shopimage: 'assets/shops/shop6.jpg',
+                shopeName: 'Dreams Store',
+                status: true,
+              ),
+            ],
+          ),
         ),
       ),
     );
