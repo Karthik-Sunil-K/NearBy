@@ -61,12 +61,7 @@ class OnBoard extends StatelessWidget {
                   padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
                   color: Color(0xff53B175),
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => LocationPage(),
-                      ),
-                    );
+                    Get.off(LocationPage);
                   },
                   child: Text(
                     'Get Started',
