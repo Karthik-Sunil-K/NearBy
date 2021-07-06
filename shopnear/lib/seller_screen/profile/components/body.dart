@@ -7,6 +7,7 @@ import 'package:shopnear/user_screen/home_page/bottom_bar.dart';
 import 'profile_menu.dart';
 import 'profile_pic.dart';
 
+
 class SellerProfileBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
