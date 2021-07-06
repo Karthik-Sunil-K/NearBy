@@ -51,7 +51,7 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
             ),
             BottomNavigationBarItem(
               icon: Icon(
-                Icons.favorite_outline,
+                Icons.explore_sharp,
                 size: 30,
               ),
               tooltip: 'Explore',
@@ -59,7 +59,7 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
             ),
             BottomNavigationBarItem(
               icon: Icon(
-                Icons.add_shopping_cart,
+                Icons.shopping_cart,
                 size: 30,
               ),
               tooltip: 'Cart',

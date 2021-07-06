@@ -16,6 +16,7 @@ import 'package:shopnear/screens/version_details.dart';
 import 'package:shopnear/seller_screen/bottom_seller_screen_navigation.dart';
 
 import 'package:shopnear/theme.dart';
+import 'package:shopnear/user_screen/cart_screen.dart';
 import 'package:shopnear/user_screen/home_page/bottom_bar.dart';
 import 'package:shopnear/user_screen/home_screen.dart';
 import 'package:shopnear/user_screen/items_list/detailed_shop.dart';
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
           theme: theme(),
-          home: UserProfileBody()),
+          home: SplashScreen()),
     );
   }
 }

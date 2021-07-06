@@ -26,6 +26,7 @@ class UserHomeScreen extends StatelessWidget {
             child: Column(
               children: [
                 Container(
+                  padding: EdgeInsets.all(10),
                   height: 40,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -82,7 +83,7 @@ class UserHomeScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10.0),
                       ),
                       child: Image.asset(
-                        "assets/images/b4.jpg",
+                        "assets/images/b6.jpg",
                         fit: BoxFit.contain,
                       ),
                     ),
@@ -154,7 +155,6 @@ class UserHomeScreen extends StatelessWidget {
                     shopeName: 'Smarana Books'),
                 ItemsShopCards(
                     shopimage: 'assets/shops/shop6.jpg', shopeName: 'K&K Shop'),
-                SpecialOffers(),
               ],
             ),
           ),

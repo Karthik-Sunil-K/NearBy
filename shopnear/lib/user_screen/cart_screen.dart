@@ -4,6 +4,8 @@ import 'package:shopnear/components/rounded_button.dart';
 
 import 'package:shopnear/screens/succes.dart';
 import 'package:shopnear/screens/succes.dart';
+import 'package:shopnear/screens/version_details.dart';
+import 'package:shopnear/user_screen/home_page/bottom_bar.dart';
 import 'package:shopnear/user_screen/items_list/shop_cards.dart';
 
 class CartScreen extends StatefulWidget {
@@ -15,45 +17,8 @@ class CartScreen extends StatefulWidget {
 
 class _CartScreenState extends State<CartScreen> {
   @override
+  @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 18.0),
-          child: Column(
-            children: [
-              Text(
-                "Your Cart",
-                style:
-                    TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
-              ),
-              Text(
-                "3 items",
-                style: Theme.of(context).textTheme.caption,
-              ),
-            ],
-          ),
-        ),
-      ),
-      body: Container(
-        child: Column(
-          children: [
-            // ItemsShopCards(shopimage: '',),
-            // ItemsShopCards(shopimage: '',),
-            // ItemsShopCards(shopimage: '',),
-            SizedBox(
-              height: 150,
-            ),
-            RoundedButton(
-              text: 'Check Out',
-              color: Color(0xff53B175),
-              press: () {
-                Get.off(SuccesPage());
-              },
-            ),
-          ],
-        ),
-      ),
-    );
+    return VersionTwoDetails();
   }
 }
