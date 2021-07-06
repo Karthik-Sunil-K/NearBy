@@ -20,35 +20,101 @@ class ListedItemsOfShop extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          ItemsProductCard(),
+          ItemsProductCard(
+            productprice: '43',
+            productName: 'Rise',
+            productUnit:'1 Kg'
+          ),
           SizedBox(
             height: 10,
           ),
-          ItemsProductCard(),
+          ItemsProductCard(
+            productprice: '55',
+            productName: 'White Rise',
+            productUnit:'1 Kg'
+          ),
           SizedBox(
             height: 10,
           ),
-          ItemsProductCard(),
+          ItemsProductCard(
+            productprice: '30',
+            productName: 'Wheat',
+            productUnit:'1 Kg'
+          ),
+           SizedBox(
+            height: 10,
+          ),
+          ItemsProductCard(
+            productprice: '35',
+            productName: 'Chilli',
+            productUnit:'500g'
+          ),
           SizedBox(
             height: 10,
           ),
-          ItemsProductCard(),
+          ItemsProductCard(
+            productprice: '42',
+            productName: 'Tomato',
+            productUnit:'1 Kg'
+          ),
           SizedBox(
             height: 10,
           ),
-          ItemsProductCard(),
+          ItemsProductCard(
+            productprice: '38',
+            productName: 'Potato',
+            productUnit:'1 Kg'
+          ),
           SizedBox(
             height: 10,
           ),
-          ItemsProductCard(),
+          ItemsProductCard(
+            productprice: '41',
+            productName: 'Savala',
+            productUnit:'1 Kg'
+          ),
+         
+          
           SizedBox(
             height: 10,
           ),
-          ItemsProductCard(),
+          ItemsProductCard(
+            productprice: '20',
+            productName: 'Bread',
+            productUnit:'1 Pack'
+          ),
           SizedBox(
             height: 10,
           ),
-          ItemsProductCard(),
+           ItemsProductCard(
+            productprice: '14',
+            productName: 'Ginger',
+            productUnit:'500g'
+          ),
+          SizedBox(
+            height: 10,
+          ),
+           ItemsProductCard(
+            productprice: '34',
+            productName: 'Garlic',
+            productUnit:'500g'
+          ),
+          SizedBox(
+            height: 10,
+          ),
+           ItemsProductCard(
+            productprice: '10',
+            productName: 'Pea',
+            productUnit:'100 g'
+          ),
+          SizedBox(
+            height: 10,
+          ),
+           ItemsProductCard(
+            productprice: '20',
+            productName: 'Soyabeen',
+            productUnit:'200 g'
+          ),
           SizedBox(
             height: 10,
           ),
