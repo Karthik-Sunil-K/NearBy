@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:shopnear/components/rounded_button.dart';
 import 'package:shopnear/provider/google_sign.dart';
-import 'package:shopnear/screens/location.dart';
 
 class SignInPage extends StatefulWidget {
   const SignInPage({Key? key}) : super(key: key);
@@ -80,35 +79,7 @@ class _SignInPageState extends State<SignInPage> {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          /* Container(
+/* Container(
             margin: EdgeInsets.symmetric(vertical: 10),
             width: MediaQuery.of(context).size.width * 0.8,
             child: ClipRRect(
@@ -133,12 +104,12 @@ class _SignInPageState extends State<SignInPage> {
             ),
           ) */
 
-          // RoundedButton(
+// RoundedButton(
 
-          //   text: 'Continue with Google',
-          //   color: Color(0xff5383EC),
-          //   press: () {
-          //     final provider = Provider.of<GoogleSignInProvider>(context,listen: false);
-          //   provider.googleLogin();
-          //   },
-          // ),
+//   text: 'Continue with Google',
+//   color: Color(0xff5383EC),
+//   press: () {
+//     final provider = Provider.of<GoogleSignInProvider>(context,listen: false);
+//   provider.googleLogin();
+//   },
+// ),

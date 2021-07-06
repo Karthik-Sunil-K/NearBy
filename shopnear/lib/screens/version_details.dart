@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shopnear/components/rounded_button.dart';
-
-import 'package:shopnear/user_screen/home_page/bottom_bar.dart';
 
 class VersionTwoDetails extends StatelessWidget {
   @override
@@ -12,15 +9,13 @@ class VersionTwoDetails extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            height: Get.height*0.4,
-            
-            decoration: BoxDecoration(
-          image: DecorationImage(
-            fit: BoxFit.contain,
-            image: AssetImage('assets/images/bagadd.png'),
-          ),
-        )
-          ),
+              height: Get.height * 0.4,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  fit: BoxFit.contain,
+                  image: AssetImage('assets/images/bagadd.png'),
+                ),
+              )),
           Text(
             'Version 2.0.1 Release',
             textAlign: TextAlign.center,
@@ -41,7 +36,6 @@ class VersionTwoDetails extends StatelessWidget {
               fontSize: 16,
             ),
           ),
-          
         ],
       ),
     );
