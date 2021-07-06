@@ -60,7 +60,7 @@ class _CartScreenState extends State<CartScreen> {
               productUnit: '1 Kg',
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.35,
+              height: MediaQuery.of(context).size.height * 0.38,
             ),
             RoundedButton(
                 text: 'Place Order',

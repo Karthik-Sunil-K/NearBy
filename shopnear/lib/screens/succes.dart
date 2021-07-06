@@ -32,7 +32,7 @@ class SuccesPage extends StatelessWidget {
             height: 25,
           ),
           Text(
-            'Your items has been placcd and is on \n it’s way to being processed',
+            'Your items has been placed and is on \n it’s way to being processed',
             textAlign: TextAlign.center,
             style: TextStyle(
               color: Color(0xff7C7C7C),
