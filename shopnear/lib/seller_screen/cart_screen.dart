@@ -16,13 +16,29 @@ class _SellerCartScreenState extends State<SellerCartScreen> {
         title: ListTile(
           leading: Text(
             "Explore",
-            style: TextStyle(
-                color: Colors.black, fontWeight: FontWeight.w600, fontSize: 18),
+            style: TextStyle(color: Colors.black, fontSize: 18),
           ),
         ),
       ),
       body: Column(
         children: [
+          ListTile(
+            leading: Text(
+              'Why this ad?',
+              style: TextStyle(
+                fontWeight: FontWeight.w600,
+                fontSize: 18,
+              ),
+            ),
+            trailing: Text(
+              'Close',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+                color: Color(0xff53B175),
+              ),
+            ),
+          ),
           CarouselSlider(
             items: [
               Container(
@@ -31,7 +47,7 @@ class _SellerCartScreenState extends State<SellerCartScreen> {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
                 child: Image.asset(
-                  "assets/images/b1.jpg",
+                  "assets/images/ad5.jpg",
                   fit: BoxFit.contain,
                 ),
               ),
@@ -41,7 +57,7 @@ class _SellerCartScreenState extends State<SellerCartScreen> {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
                 child: Image.asset(
-                  "assets/images/b2.jpg",
+                  "assets/images/ad2.jpg",
                 ),
               ),
               Container(
@@ -50,7 +66,7 @@ class _SellerCartScreenState extends State<SellerCartScreen> {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
                 child: Image.asset(
-                  "assets/images/b3.jpg",
+                  "assets/images/ad3.jpg",
                   fit: BoxFit.contain,
                 ),
               ),
@@ -60,7 +76,7 @@ class _SellerCartScreenState extends State<SellerCartScreen> {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
                 child: Image.asset(
-                  "assets/images/b6.jpg",
+                  "assets/images/ad4.jpg",
                   fit: BoxFit.contain,
                 ),
               ),
@@ -70,7 +86,7 @@ class _SellerCartScreenState extends State<SellerCartScreen> {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
                 child: Image.asset(
-                  "assets/images/b5.jpg",
+                  "assets/images/ad1.jpg",
                   scale: 2,
                   fit: BoxFit.contain,
                 ),
