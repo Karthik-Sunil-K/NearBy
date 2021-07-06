@@ -24,6 +24,7 @@ import 'package:shopnear/user_screen/items_list/shop_cards.dart';
 import 'package:shopnear/user_screen/profile/components/body.dart';
 import 'package:shopnear/user_screen/profile/profile_screen.dart';
 import 'screens/splash_screen.dart';
+import 'seller_screen/cart_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -41,7 +42,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
           theme: theme(),
-          home: BottomBarScreen()),
+          home: SellerCartScreen()),
     );
   }
 }
